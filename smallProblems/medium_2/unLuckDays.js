@@ -33,11 +33,13 @@
     const FRIDAY = 5;
     const THIRTEEN = 13;
 
-    let collectionOfthirteenths = [];
-
-    for(let month = 0; month < 12; month += 1) {
-      collectionOfthirteenths.push(new Date(year, month, THIRTEEN));
+    let collectionOfthirteenths = (function collectThirteens(month = 12) { 
+    if(month === 0) {
+      return [new Date(year, month, THIRTEEN)];
     }
+
+    return [...collectThirteens(month - 1), new Date(year, month, THIRTEEN)];
+  }());
 
     return collectionOfthirteenths.reduce((fridayCount, day) => {
       if(day.getDay() === FRIDAY) {
@@ -47,4 +49,19 @@
       return fridayCount;
     }, 0);
   }
+
   
+
+  /*
+      for(let month = 0; month < 12; month += 1) {
+    collectionOfthirteenths.push(new Date(year, month, THIRTEEN));
+    }
+
+    function collectThirteens(month = 12) { 
+    if(month === 0) {
+      return [new Date(year, month, THIRTEEN)];
+    }
+
+    return [...collectThirteens(month - 1), new Date(year, month, THIRTEEN)];
+  }
+    */
