@@ -1,3 +1,3 @@
 # JS101
->Launch School JS101 repo
+## Launch School JS101 repo
 Orgnized and Re-Structured
