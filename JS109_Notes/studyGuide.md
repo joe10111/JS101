@@ -19,7 +19,7 @@
 * Identify the fundamental concept or concepts demonstrated by the question.
 
 ## Examples
-All Examples are from LS
+  All Examples are from LS
 ```
 let greeting = 'Hello';
 
@@ -66,11 +66,11 @@ myFunc();
 ```
 ### Bad Example
 > The result of the function is "Hello, world!".
-Grade : 40 / 100
+  Grade : 40 / 100
 
 ### Good Example
 > The function outputs Hello, world!, which it obtains from the global variable hello, then returns undefined. The function can use hello since functions have access to variables defined in the outer scope.
-Grade : 100 / 100
+  Grade : 100 / 100
 
 ## Be consistent 
 ```
@@ -135,7 +135,7 @@ Awnser From LS
 * ""
 * undefined
 * null
-These are all falsey values, but not equal to or are false. They only repersent false, but are not the boolean value. 
+  These are all falsey values, but not equal to or are false. They only repersent false, but are not the boolean value. 
 
 ## Example of Thruthiness
 
@@ -155,10 +155,10 @@ if (a) {
 * Use "evaluates to false" or "is falsy" when discussing expressions that only have to be falsy.
 * Do not use "is true" or "is equal to true" unless you are specifically discussing the boolean value true.
 * Do not use "is false" or "is equal to false" unless you are specifically discussing the boolean value false.
-Above Bullets points are from LS
+  Above Bullets points are from LS
 
 ## Distinctions
 * Parameters are the names assigned to a function's arguments; arguments are the values that get passed to the function.
 * Variables are not passed to or returned by functions: values or references are passed.
 * Truthiness vs Boolean values
-Above Bullets points are from LS
+  Above Bullets points are from LS
