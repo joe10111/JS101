@@ -7,21 +7,11 @@ Take it apart and try to describe every interaction with precision.
 // 3
 // => undefined
 ```
-| Action      | Performed on | Side Effect | Return Value | Return Value Used? |
-|-------------|--------------|-------------|--------------|--------------------|
-| method call |  Outer Array | None        | undefined    | No                 |
-| (forEach)   |              |             |              |                    |
-|-------------|--------------|-------------|--------------|--------------------| 
-| callback    | Sub-Array    | None        | undefined    | No                 |
-| execution   |              |             |              |                    |
-|-------------|--------------|-------------|--------------|--------------------|
-| Element     | Each 	       | None        | Element at   | Yes, used by       |  
-| Reference   | sub-array    |             | index 0      | console.log        |
-|  ([0])      |              |             | of sub-array |                    |
-|-------------|--------------|-------------|--------------|--------------------|
-| method call | Elm at index | Displays    | undefined    | Yes, used to       |  
-|(console.log)| 0 of sub     | String of a |              | determine call     |
-|             | array        | Number      |              | back return value  |
-|-------------|--------------|-------------|--------------|--------------------|
+| Action                    | Performed on                        | Side Effect                               | Return Value                    | Is Return Value Used?                          |
+|---------------------------|-------------------------------------|-------------------------------------------|---------------------------------|------------------------------------------------|
+| method call (forEach)     | the outer array                     | None                                      | undefined                       | No                                             |
+| callback execution        | Each sub-array                      | None                                      | undefined                       | No                                             |
+| element reference ([0])   | Each sub-array                      | None                                      | Element at index 0 of sub-array | Yes, used by console.log                       |
+| method call (console.log) | Element at index 0 of the sub-array | Outputs string representation of a Number | undefined                       | Yes, used to determine callback's return value |
                 
      
