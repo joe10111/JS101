@@ -19,7 +19,7 @@
 * Identify the fundamental concept or concepts demonstrated by the question.
 
 ## Examples
-  All Examples are from LS
+#### All Examples are from LS
 ```
 let greeting = 'Hello';
 
@@ -109,7 +109,7 @@ function appendTo(str, otherStr) {
   return str;
 }
 ```
-Awnser From LS
+#### Awnser From LS
 > We're declaring a function named appendTo that takes two arguments, both of which are presumed to be strings. We then use a for loop with an index local variable to iterate over the characters in the second string, appending each character to the value of the first string. We then return the result value as a new string.
 
 ### User-level Example
@@ -135,7 +135,7 @@ Awnser From LS
 * ""
 * undefined
 * null
-  These are all falsey values, but not equal to or are false. They only repersent false, but are not the boolean value. 
+#### These are all falsey values, but not equal to or are false. They only repersent false, but are not the boolean value. 
 
 ## Example of Thruthiness
 
@@ -155,10 +155,10 @@ if (a) {
 * Use "evaluates to false" or "is falsy" when discussing expressions that only have to be falsy.
 * Do not use "is true" or "is equal to true" unless you are specifically discussing the boolean value true.
 * Do not use "is false" or "is equal to false" unless you are specifically discussing the boolean value false.
-  Above Bullets points are from LS
+#### Above Bullets points are from LS
 
 ## Distinctions
 * Parameters are the names assigned to a function's arguments; arguments are the values that get passed to the function.
 * Variables are not passed to or returned by functions: values or references are passed.
 * Truthiness vs Boolean values
-  Above Bullets points are from LS
+#### Above Bullets points are from LS
