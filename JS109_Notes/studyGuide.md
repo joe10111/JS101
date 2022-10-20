@@ -88,7 +88,7 @@ greeting = 'Hello';
 * Variables declared with let or const
 * Function parameters
 * Function names
-
+ 
 > Object property names are not variables
 
 ## Implementation-level VS user-level description
