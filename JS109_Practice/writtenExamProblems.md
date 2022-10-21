@@ -49,5 +49,5 @@ deepCopiedArr; // => [ { b: 'foo' }, [ 'bar', 'baz' ] ]
 arr;           // => [ { b: 'foo' }, [ 'bar' ] ]
 ``` 
 
-### Awnser : 
+### Awnser : On line 43 the global variable ```arr``` is declared and initialized to an array with a object and array nested within containing the values ````{ b: 'foo' }``` and ```['bar']```.     
 

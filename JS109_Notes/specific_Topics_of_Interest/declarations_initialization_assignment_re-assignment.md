@@ -1,8 +1,8 @@
 # Declarations, Initialization, Assignment, and Re-Assignment 10/20/22
- ## Declaration in javscript
-  * A variable declaration is a statment that asks the Javascript compliler to reserve a certain amount of space for a value with a name attched. 
+ ## Declaration in JavaScript
+  * A variable declaration is a statement that asks the Javascript compliler to reserve a certain amount of space for a value with a name attched. 
 
- ## Initialization in javscript
+ ## Initialization in JavaScript
   * If the value is left un-inilized Javascript will automatiically inilize the value as undefined.
   * Delcaring and inlizing the variable and value in global scope will make it accesible from all scopes.  
 

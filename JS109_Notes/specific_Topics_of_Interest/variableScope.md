@@ -1,15 +1,15 @@
 # Variable Scope 10/20/2022
- ## What is varaible scope? 
-  * Variable scope is where the scope at witch the variable is accseable from other scopes. 
+ ## What is variable scope?  
+  * Variable scope is where the scope at witch the variable is accessible from other scopes. 
   > "A variable's scope is the part of the program that can access that variable by name."
   ##### ^ Quote from JS101 Variable Scope LS
 
  ## Types of Variable Scope
-  * In JavaScript there are different two categorys of scope this includes: global and local.
+  * In JavaScript there are different two category's of scope this includes: global and local.
 
   ### Local Scope: function scope and block scope
 
-   #### function scope
+   #### function scope 
    * Functions define a new scope for local variables. You can think of the scope defined by a function as an inner scope. Nested functions define nested scopes.
 
    > "Rule 1: outer scope variables can be accessed by the inner scope."
@@ -32,11 +32,13 @@
   ### Variable Shadowing
   * variable shadowing is when there are two of the same variable names present in scope. It prevents access to the outer scope local variable.
 
-  ## What determins variable scope? 
-  * The key token infront of the variable, ```let```, ```const```, and ```var```.
+  ## What determines variable scope?  
+  * The key token in-front of the variable, ```let```, ```const```, and ```var```.
+ 
+  > The most notable rule is that all undeclared variables have global scope: they ignore block and function scope entirely. If your program uses that same variable name in a different scope without declaring it, there's a good chance that it will step on the original variable by changing its content.
   
   > "Constants declared with const have the same scope as variables declared with let."
-  ##### ^ Quote from Intro To JavaScript Book LS 
+  ##### ^ Quotes from Intro To JavaScript Book LS 
 
   ## Expanding on Global Scope in the context of larger Javascript Files
   > "The concept of global scope is a little more nuanced when you compare JavaScript in the browser to JavaScript in Node.js. In Node.js, a global variable is only available in the file/module you declare it in. If you want variables to be available in another module, you'll have to explicitly import and export them in modules."
